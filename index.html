@@ -37,19 +37,19 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">How it works</a>
+              <a class="nav-link" href="#hiw">How it works</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#">About Us</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="#">Blog</a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="#">Merchant</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Contact us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Sign in</a>
             </li>
           </ul>
         </div>
@@ -84,7 +84,7 @@
       </div>
     </header>
 
-    <section class="feature">
+    <section class="feature" id="hiw">
       <div class="container h-100">
         <div class="row h-100">
           <div class="col-lg-5 my-auto">
@@ -172,9 +172,9 @@
         <div class="row h-100">
             <div class="col-lg-7 my-auto">
               <div class="">
-                <h3 class="mb-3">Buy and Exchange Cryptocurrency</h3>
+                <h3 class="mb-3">Get Cash or Cryptocurrencies</h3>
                 <p class="subtext">
-                    Automatically get rewarded in cryptocurrency, or redeem for cryptocurrency. 
+                    Automatically get rewarded in cash, then redeem for either cash or cryptocurrency. 
                 </p>
               </div>
             </div>
@@ -247,7 +247,7 @@
                 </ul>
             </div>
 
-            <div class="col-lg-2 mb-3 text-left">
+            <!-- <div class="col-lg-2 mb-3 text-left">
                 <p class="column-title"><strong>Column</strong></p>
                 <ul class="list-unstyled">
                     <li><a href="#">Link 1</a></li>
@@ -275,7 +275,7 @@
                     <li><a href="#">Link 3</a></li>
                     <li><a href="#">Link 4</a></li>
                 </ul>
-            </div>
+            </div> -->
             
         </div>
       </div>
@@ -290,6 +290,43 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/new-age.min.js"></script>
+    <!-- Allows Auto Scrolling within page-->
+    <script>// Select all links with hashes
+        $('a[href*="#"]')
+          // Remove links that don't actually link to anything
+          .not('[href="#"]')
+          .not('[href="#0"]')
+          .click(function(event) {
+            // On-page links
+            if (
+              location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+              && 
+              location.hostname == this.hostname
+            ) {
+              // Figure out element to scroll to
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+              // Does a scroll target exist?
+              if (target.length) {
+                // Only prevent default if animation is actually gonna happen
+                event.preventDefault();
+                $('html, body').animate({
+                  scrollTop: target.offset().top
+                }, 1000, function() {
+                  // Callback after animation
+                  // Must change focus!
+                  var $target = $(target);
+                  $target.focus();
+                  if ($target.is(":focus")) { // Checking if the target was focused
+                    return false;
+                  } else {
+                    $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                    $target.focus(); // Set focus again
+                  };
+                });
+              }
+            }
+          });</script>
 
   </body>
 
