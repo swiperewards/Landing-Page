@@ -316,21 +316,6 @@ header.masthead .device-container .screen img {
   margin-bottom: 0;
 }
 
-@media (max-width: 414px){
-  .device-container {
-    display: none;
-  }
-
-  .feature h3 {
-    font-size: 30px;
-    text-align: center;
-  }
-
-  .feature .subtext {
-    text-align: center;
-  }
-}
-
 .cta {
   background: url(../img/card-bg-long.svg);
   background-size: 40%;
@@ -457,4 +442,49 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 
 .subtext-small {
   font-size: 16px;
+}
+
+@media (max-width: 768px){
+  header.masthead .header-content h1 {
+    font-size: 42px;
+  }
+  header.masthead .header-content {
+    text-align: left;
+  }
+}
+
+@media (max-width: 414px){
+  header.masthead .header-content h1 {
+    font-size: 32px;
+  }
+
+  header.masthead .header-content {
+    text-align: center;
+  }
+
+  .card-bg {
+    width: 100%;
+    margin-top: 40px;
+    left: 0;
+    right: 0;
+  }
+
+  .device img {
+    width: 176px;
+    display: block;
+    margin: 0 auto 16px;
+  }
+
+  .card-bg img {
+    display: none;
+  }
+
+  .feature h3 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .feature .subtext {
+    text-align: center;
+  }
 }
