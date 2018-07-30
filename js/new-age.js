@@ -5,16 +5,13 @@
 	/* Adjust Primary Navigation Background Opacity
   ------------------------------------------------------*/
   $(window).on("scroll", function () {
-    console.log("shit");
 
       var h = $('#mainNav').height();
       var y = $(window).scrollTop();
       var header = $('#mainNav');
 
       if ((y > h + 30 ) && ($(window).outerWidth() > 768 ) ) {
-        header.addClass('opaque');	 
-        console.log("shit2");
-     
+        header.addClass('opaque');	      
       }
       else {
         console.log("shit3");
