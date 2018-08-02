@@ -59,13 +59,17 @@ section h2 {
 }
 
 #mainNav {
-  border-color: rgba(34, 34, 34, 0.05);
-  background-color: white;
+  background: transparent;
   -webkit-transition: all .35s;
   -moz-transition: all .35s;
   transition: all .35s;
   font-weight: 200;
   letter-spacing: 1px;
+}
+
+#mainNav .opaque {
+  background: #002049;
+  border-color: rgba(34, 34, 34, 0.05);
 }
 
 #mainNav .navbar-brand {
@@ -194,23 +198,122 @@ header.masthead .device-container .screen img {
   }
 }
 
+@media (max-width: 414px) {
+  header.masthead {
+    padding-top: 88px;
+  }
+  .video-iframe {
+    width: 320px;
+    height: 240px;
+  }
+  .hiw-img-container {
+    display: none;
+  }
+}
+
 .feature h3 {
   font-size: 40px;
 }
 
-@media (max-width: 414px){
-  .device-container {
-    display: none;
-  }
+.client .masthead {
+  color: #FFF;
+  background: url('../img/overlay-polygon.png');
+  background-size: cover;
+  background-color: #002049;
+}
 
-  .feature h3 {
-    font-size: 30px;
-    text-align: center;
-  }
+.client .masthead h1, .client .masthead p {
+  color: #FFF;
+}
 
-  .feature .subtext {
-    text-align: center;
-  }
+.client .masthead .video-link {
+  margin-top: 12px;
+}
+
+.client .masthead .video-link img{
+  width: 20px;
+  margin: 0px 8px;
+  padding-bottom: 2px;
+}
+
+.client .masthead .video-link a {
+  font-size: 13px;
+  vertical-align: middle;
+}
+
+.client .summary .subtext {
+  margin-top: 24px;
+}
+
+.client .hiw {
+  background: #FBFCFF;
+}
+
+.hiw-item .inner-div{
+  margin: 0 auto;
+}
+
+.hiw-content {
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.hiw-img-container {
+  position: absolute;
+  width: 100%;
+}
+
+.hiw-img-feature {
+  width: 176px;
+  margin: 0 auto;
+  display: block;
+}
+
+.hiw-vline {
+  background: #C8CFDB;
+  height: 80px;
+  width: 1px;
+  display: block;
+}
+
+.hiw-hline {
+  width: 336px;
+  height:  1px;
+  background: #C8CFDB;
+  position:  absolute;
+  top: 56%;
+}
+
+.pricing-card p{
+  font-size: 14px;
+}
+
+.pricing-card p.price-tag {
+  color: #1C7CF8;
+  font-size: 32px;
+  margin-top: 32px;
+  margin-bottom: 0;
+}
+
+.pricing-card .popular {
+  border: 1px solid rgba(0,32,73,0.10);
+  box-shadow: 0 0 40px 0 rgba(0,0,0,0.10);
+  border-top: 6px solid #1C7CF8;
+}
+
+.card-divider {
+  width: 100%;
+  background: #C8CFDB;
+  max-width: 100%;
+}
+
+.highlight-tag {
+  color: #4EC5FD;
+}
+
+.pricing-card .small {
+  font-size: 70%;
+  margin-bottom: 0;
 }
 
 .cta {
@@ -337,4 +440,51 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   font-size: 22px;
 }
 
-/* remove everything below this this after migration  */
+.subtext-small {
+  font-size: 16px;
+}
+
+@media (max-width: 768px){
+  header.masthead .header-content h1 {
+    font-size: 42px;
+  }
+  header.masthead .header-content {
+    text-align: left;
+  }
+}
+
+@media (max-width: 414px){
+  header.masthead .header-content h1 {
+    font-size: 32px;
+  }
+
+  header.masthead .header-content {
+    text-align: center;
+  }
+
+  .card-bg {
+    width: 100%;
+    margin-top: 40px;
+    left: 0;
+    right: 0;
+  }
+
+  .device img {
+    width: 176px;
+    display: block;
+    margin: 0 auto 16px;
+  }
+
+  .card-bg img {
+    display: none;
+  }
+
+  .feature h3 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .feature .subtext {
+    text-align: center;
+  }
+}
