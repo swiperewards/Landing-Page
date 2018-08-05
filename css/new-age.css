@@ -2,12 +2,13 @@ html,
 body {
   width: 100%;
   height: 100%;
-  overflow-x: hidden;
 }
 
 body {
   font-family: 'Roboto', 'sans-serif';
   background: #FFF;
+  color: #212A37;
+  overflow-x: hidden;
 }
 
 a {
@@ -65,11 +66,6 @@ section h2 {
   transition: all .35s;
   font-weight: 200;
   letter-spacing: 1px;
-}
-
-#mainNav .opaque {
-  background: #002049;
-  border-color: rgba(34, 34, 34, 0.05);
 }
 
 #mainNav .navbar-brand {
@@ -203,8 +199,8 @@ header.masthead .device-container .screen img {
     padding-top: 88px;
   }
   .video-iframe {
-    width: 320px;
-    height: 240px;
+    width: 260px;
+    height: 224px;
   }
   .hiw-img-container {
     display: none;
@@ -327,6 +323,86 @@ header.masthead .device-container .screen img {
   margin-right: 24px;
 }
 
+.about .blue-bg {
+  background: url(../img/about-hero.jpg);
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+  background-color: #1C7CF8;
+}
+
+.about header.masthead {
+  min-height: auto;
+  height: auto;
+}
+
+.about .masthead h2, .about .masthead a, .about .cta h4, .faq .cta h4{
+  color:  #FFF;
+  line-height: 130%;
+}
+
+.about .masthead .highlight {
+  color: #212A37;
+}
+
+.about .masthead p {
+  font-size: 15px;
+}
+
+.about .team {
+  background: #FBFCFF;
+}
+
+.team-member img {
+  width: 100%;
+}
+
+.team-member .team-member-details {
+  display: flex;
+  align-items: center;
+}
+
+.about .name {
+  color: #1C7CF8;
+  margin-bottom: 4px;
+}
+
+.about .social a {
+  color: #1C7CF8;
+}
+
+.about .social a:hover {
+  color: #002049;
+  text-decoration: none;
+}
+
+.about hr {
+  max-width: 100%;
+  width: 100%;
+  border-color: #C8CFDB;
+}
+
+.about .advisor img {
+  width: 260px;
+}
+
+.about .cta, .faq .cta {
+  background: url('../img/overlay-polygon.png');
+  background-color: #002049;
+  background-size: cover;
+}
+
+.about .background-bg {
+  display: none;
+}
+
+.faq header.masthead {
+  background: url('../img/overlay-polygon.png');
+  background-color: rgba(28, 124, 248, 0.25);
+  background-size: cover;
+  min-height: auto;
+  height: auto;
+}
+
 footer {
   padding: 40px 0;
   color: #FFF;
@@ -376,6 +452,14 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 .no-gutter > [class*='col-'] {
   padding-right: 0;
   padding-left: 0;
+}
+
+.mt-6 {
+  margin-top: 4rem !important;
+}
+
+.mt-7 {
+  margin-top: 5rem !important;
 }
 
 .btn-primary {
@@ -444,12 +528,57 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   font-size: 16px;
 }
 
+.navbar-collapse.show {
+  background: #FFF;
+}
+
+.opaque {
+  background: #FFF !important;
+  box-shadow: 0 0 40px 0 rgba(0,0,0,0.10);
+}
+
 @media (max-width: 768px){
   header.masthead .header-content h1 {
     font-size: 42px;
   }
   header.masthead .header-content {
     text-align: left;
+  }
+
+  .about .blue-bg {
+    margin-top: 0rem !important;
+    margin-bottom: 0rem !important;
+    background: #1C7CF8;
+  }
+
+  .about .background-bg {
+    display: block;
+    background: url(../img/about-hero.jpg);
+    background-size: cover;
+    position: absolute;
+    width: 120%;
+    opacity: 0.1;
+  }
+
+  .about .team-member {
+    margin: 16px 0;
+  }
+
+  .about .team-member-details {
+    margin-top: 32px;
+  }
+
+  /** FIX FOR IPAD SCREENS **/
+  .about .order-md-last {
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+
+  .about .order-md-first {
+    -webkit-box-ordinal-group: 14;
+    -ms-flex-order: 13;
+    order: 13;
   }
 }
 
@@ -486,5 +615,30 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 
   .feature .subtext {
     text-align: center;
+  }
+
+  .about .background-bg {
+    display: block;
+  }
+
+  .about .about-hero-text {
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+  }
+
+  .about .about-hero-text h2{
+    font-size: 26px;
+  }
+
+  .order-sm-last {
+      -webkit-box-ordinal-group: 14;
+      -ms-flex-order: 13;
+      order: 13;
+  }
+
+  .order-sm-first {
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: 1;
+    order: 1;
   }
 }
