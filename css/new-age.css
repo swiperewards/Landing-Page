@@ -382,7 +382,7 @@ header.masthead .device-container .screen img {
 }
 
 .about .advisor img {
-  width: 260px;
+  width: 100%;
 }
 
 .about .cta, .faq .cta {
@@ -556,7 +556,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
     background: url(../img/about-hero.jpg);
     background-size: cover;
     position: absolute;
-    width: 120%;
+    width: 100%;
     opacity: 0.1;
   }
 
