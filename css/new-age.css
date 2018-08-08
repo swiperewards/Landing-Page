@@ -644,3 +644,10 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   }
 }
 
+body .modal-dialog { /* Width */
+  max-width: 100%;
+  width: auto !important;
+  display: inline-block;
+  height: 50% !important;
+}
+
