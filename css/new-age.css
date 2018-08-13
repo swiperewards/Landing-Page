@@ -383,7 +383,6 @@ header.masthead .device-container .screen img {
 
 .about .advisor img {
   width: 100%;
-  height: 162px;
 }
 
 .about .cta, .faq .cta {
@@ -394,6 +393,10 @@ header.masthead .device-container .screen img {
 
 .about .background-bg {
   display: none;
+}
+
+.about .advisor-first-margin {
+  margin-left: 16%;
 }
 
 .faq header.masthead {
@@ -567,6 +570,10 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 
   .about .team-member-details {
     margin-top: 32px;
+  }
+
+  .about .advisor-first-margin {
+    margin-left: 15px;
   }
 
   /** FIX FOR IPAD SCREENS **/
