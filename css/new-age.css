@@ -211,6 +211,10 @@ header.masthead .device-container .screen img {
   font-size: 40px;
 }
 
+.device-container {
+  max-width: 325px;
+}
+
 .client .masthead {
   color: #FFF;
   background: url('../img/overlay-polygon.png');
@@ -320,7 +324,7 @@ header.masthead .device-container .screen img {
 }
 
 .cta-photo{
-  margin-right: 24px;
+  max-width: 325px;
 }
 
 .about .blue-bg {
