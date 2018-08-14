@@ -11,7 +11,9 @@
   <title>Swipe – Loyalty, Acquistion, and Processing</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+   crossorigin="anonymous">
 
   <!-- Custom fonts for this template -->
   <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
@@ -25,7 +27,7 @@
 <body id="page-top" class="client">
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav"> 
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="index.html">
         <img src="img/swipe-logo-final.png" height="28px">
@@ -41,14 +43,14 @@
             <a class="nav-link" href="#">How it works</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="faq.html">FAQs</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Contact us</a>
           </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="#">Sign in</a>
-          </li> -->
         </ul>
       </div>
     </div>
@@ -67,12 +69,10 @@
               Swipe is the revolutionary new tool that will help you retain your current customers, obtain new customers, and reduce your
               processing costs - all in one package.
             </p>
-            <a class="btn btn-primary">Learn More</a>
-            <br/>
+            <!-- <a class="btn btn-primary">Learn More</a> -->
             <div class="video-link">
               <a class="btn-text btn-icon">
                 <img src="img/ic-play-circle.svg"> Play video to learn more.
-                
               </a>
             </div>
           </div>
@@ -87,7 +87,7 @@
         <div class="col-lg-12 my-auto">
           <div class="text-center">
             <h3 class="mb-3">Boost Margins. Reduce Costs.</h3>
-            <div class="col-lg-6 offset-sm-3">
+            <div class="col-lg-6 offset-lg-3">
               <p class="subtext">
                 Take your business to the next level. Swipe is the perfect tool to acquire and retain customers at no cost to you,
                 <strong>
@@ -96,7 +96,7 @@
               </p>
               <br/>
               <br/>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/_i42kEoEunA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              <iframe class="video-iframe" width="560" height="315" src="https://www.youtube.com/embed/_i42kEoEunA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
           </div>
         </div>
@@ -109,16 +109,16 @@
       <div class="row h-100" style="position: relative;">
         <div class="col-lg-12 my-auto text-center">
           <h3>How It Works</h3>
-          <div class="col-lg-6 offset-sm-3">
+          <!-- <div class="col-lg-6 offset-lg-3">
             <p class="subtext-small mb-5">
               A short lorem ipsum can be placed here
             </p>
-          </div>
+          </div> -->
         </div>
         <div class="hiw-img-container">
           <div class="hiw-vline" style="margin: 6rem auto 1rem;"></div>
           <div class="hiw-hline" style="left: 10%;"></div>
-          <img src="img/swipe-app-mockup_3.png" class="hiw-img-feature">
+          <img src="img/swipe-app-mockup-home.png" class="hiw-img-feature">
           <div class="hiw-hline" style="right: 10%;"></div>
           <div class="hiw-vline" style="margin: 1rem auto;"></div>
         </div>
@@ -156,13 +156,8 @@
       <div class="row h-100" style="position: relative;">
         <div class="col-lg-12 my-auto text-center">
           <h3>Pricing</h3>
-          <div class="col-lg-6 offset-sm-3">
-            <p class="subtext-small mb-5">
-              Straightforward fair pricing
-            </p>
-          </div>
         </div>
-        <div class="col-sm-6 my-5 pricing-card">
+        <div class="col-lg-6 my-5 pricing-card">
           <div class="col-sm-9 card mx-auto">
             <div class="card-body text-center px-4 py-5">
                 <h5 class="hiw-title">Acquition, Retention and Analytics</h5>
@@ -172,15 +167,29 @@
                 <p>Get our customer acquisition and retention tool-set without processing with us.</p>
                 <p>Maybe another item can be set here, something that can get their attention.</p>
                 <p>Pay a monthly fee of $49.99 to use our system.</p>
-                <a class="btn btn-primary mt-4">Select Plan</a>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                    Select Plan
+                </button>
+                    <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeIjbJAQp5TXmkvE_j7OzjA_YkshR9Af1lTF3c8o4q-kNbq5A/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe> -->
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeIjbJAQp5TXmkvE_j7OzjA_YkshR9Af1lTF3c8o4q-kNbq5A/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
             </div>
           </div>
         </div>
-        <div class="col-sm-6 my-5 pricing-card">
+        <div class="col-lg-6 my-5 pricing-card">
             <div class="col-sm-9 card mx-auto popular">
               <div class="card-body text-center px-4 py-5">
-                  <h5 class="hiw-title">Processing Per Swipe, Dip, or Tap</h5>
-                  <p class="small highlight-tag"><strong><i>MOST POPULAR</i></strong></p>
+                  <h5 class="hiw-title">Per Swipe, Dip, or <br/> Tap</h5>
+                  <br/>
                   <p class="price-tag" style="margin-top: 8px;">2.50% + $0.10c</p>
                   <p class="small highlight-tag">Decreases with volume</p>
                   <p class="caption">Retention, Acquistion and Analytics Included</p>
@@ -188,7 +197,22 @@
                   <p>We process for you and use what would normally be our revenue to feed your rewards system.</p>
                   <p>You acquire more customers and retain your current ones at no additional cost.</p>
                   <p>Custom pricing for larger merchants.</p>
-                  <a class="btn btn-primary mt-4">Select Plan</a>
+                  <!-- Button trigger modal -->
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                    Select Plan
+                </button>
+                    <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeIjbJAQp5TXmkvE_j7OzjA_YkshR9Af1lTF3c8o4q-kNbq5A/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe> -->
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeIjbJAQp5TXmkvE_j7OzjA_YkshR9Af1lTF3c8o4q-kNbq5A/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
               </div>
             </div>
           </div>
