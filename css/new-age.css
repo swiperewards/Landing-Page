@@ -145,6 +145,10 @@ section h2 {
   #mainNav.navbar-shrink .navbar-nav > li > a:focus:hover {
     color: #1257B1;
   }
+  #mainNav .container .navbar-brand > img{
+    width: 75px;
+    height:75px;
+  }
 }
 
 header.masthead {
@@ -546,6 +550,11 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
     text-align: left;
   }
 
+  #mainNav.navbar .container .navbar-brand > img{
+    width: 50px;
+    height:50px;
+  }
+
   .about .blue-bg {
     margin-top: 0rem !important;
     margin-bottom: 0rem !important;
@@ -590,6 +599,11 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 
   header.masthead .header-content {
     text-align: center;
+  }
+
+  #mainNav.navbar .container .navbar-brand > img{
+    width: 50px;
+    height:50px;
   }
 
   .card-bg {
@@ -654,4 +668,5 @@ body .modal-dialog { /* Width */
   display: inline-block;
   /* height: 50% !important; */
 }
+
 
