@@ -642,6 +642,10 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
     -ms-flex-order: 1;
     order: 1;
   }
+
+  .native-app-image{
+    margin-left:30px;
+  }
 }
 
 body .modal-dialog { /* Width */
@@ -650,3 +654,4 @@ body .modal-dialog { /* Width */
   display: inline-block;
   /* height: 50% !important; */
 }
+
